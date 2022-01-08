@@ -1,0 +1,139 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="desing_survey.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title" class="text-center">Enviromental Awareness Survey Form</h1>
+            <p id="description" class="description text-center">Thank you for taking this survey and sharing your opinions.</p>
+        </header>
+
+        <form id="survey-form">
+            <div>
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <br>
+                    <input required type="text" placeholder="Please enter your name" name="name" id="name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <br>
+                    <input required type="email" placeholder="Please enter your email" id="email" name="email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">Age <span class="clue">(optional)</span>
+                </label>
+                    <br>
+                    <input type="number" placeholder="Please enter your age" id="number" name="age" class="form-control" min="10" max="99">
+                </div>
+                <div class="form-group">
+                    <p>What is your current education level?</p>
+                    <select name="education" id="dropdown" class="form-control">
+                    <option disabled selected value>Select current education level</option>
+                    <option value="noCompleted">No schooling completed.</option>
+                    <option value="someHighschool">Some high school, no diploma.</option>
+                    <option value="highschool">High school graduate, diploma or the equivalent.</option>
+                    <option value="someCollege">Some college credit, no degree.</option>
+                    <option value="technical">Trade/ technical/ vocational training.</option>
+                    <option value="associate">Associate degree.</option>
+                    <option value="bachelor">Bachelor's degree.</option>
+                    <option value="master">Master's degree.</option>
+                    <option value="professional">Professional degree.</option>
+                    <option value="doctorate">Doctorate degree</option>
+                </select>
+                </div>
+                <div class="form-group">
+                    <p>How concerned are you about climate change?</p>
+                    <label>
+                    <input 
+                        name="level-concern" 
+                        value="very"
+                        type="radio"
+                        class="input-radio"
+                        checked
+                    >Very concerned</label>
+                    <br>
+                    <label>
+                    <input
+                        name="level-concern" 
+                        value="some"
+                        type="radio" 
+                        class="input-radio"
+                        checked
+                    >Somewhat concerned</label>
+                    <br>
+                    <label>
+                    <input
+                        name="level-concern" 
+                        value="not"
+                        type="radio" 
+                        class="input-radio"
+                        checked
+                    >Not too concerned</label>
+                    <br>
+                    <label>
+                    <input 
+                        name="level-concern" 
+                        value="not-at-all"
+                        type="radio" 
+                        class="input-radio"
+                        checked 
+                >Not at all concern</label>
+                </div>
+                <div class="form-group">
+                    <p>What are your main concerns?<span class="clue"> (Check all that apply)</span></p>
+                    <label>
+                <input 
+                
+                name="main" 
+                value="extinct"
+                type="checkbox" 
+                class="input-checkbox">
+                Extinction</label>
+                    <br>
+                    <label>
+                <input 
+                name="main" 
+                value="extrem"
+                type="checkbox" 
+                class="input-checkbox">
+                Extreme weather</label>
+                    <br>
+                    <label>
+                <input 
+                name="main" 
+                value="economic"
+                type="checkbox" 
+                class="input-checkbox">
+                Economic crisis</label>
+                    <br>
+                    <label>
+                <input 
+                name="main" 
+                value="famine"
+                type="checkbox" 
+                class="input-checkbox">
+                Famine / Food insecurity</label>
+                </div>
+                <div class="form-group">
+                    <p>Any comments or suggestions?</p>
+                    <textarea placeholder="Enter your comment here..." name="comment" id="comments" class="input-textarea"></textarea>
+                </div>
+                <br>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">Submit</button>
+                </div>
+            </div>
+            <br>
+        </form>
+    </div>
+</body>
+
+</html>
